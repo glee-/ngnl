@@ -1,8 +1,140 @@
+html {
+  margin: 0;
+  padding: 0;
+}
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  font-family: 'Raleway', sans-serif;
+  color: #383532;
+  font-size:18px;
+}
+ul {
+  list-style: none;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+  font-family: inherit;
+}
+h3 {
+  margin: 0;
+  padding: 0;
+}
+p {
+  margin: 0;
+}
+.screen {
+  height: 100vh;
+}
+.screen:first-child {
+  background-image: url('/images/laptop2-dark-flipped.jpg');
+  background-size: 100%, 100%;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  color: #F0F0F0;
+} .pxdivider {
+  height: 40px;
+  display: block;
 }
 
-a {
-  color: #00B7FF;
+.flex-container {
+ width: 100%;
+ display: flex;
+ justify-content: space-around;
+}
+.center {
+  display: table;
+  margin: auto;
+} .content {
+  width: 70%;
+}
+
+#name {
+  display: block;
+  margin-left: 12%;
+  letter-spacing: 1px;
+  padding-top: 8%;
+} h1 {
+  font-size: 4.5em;
+  font-weight: normal;
+  letter-spacing: 8px;
+  padding: 0;
+  margin: 0;
+} #name ul {
+  margin: 0;
+}
+#descriptions {
+  font-size: 1.2em;
+  letter-spacing:2px;
+  margin-top: 15vh;
+}
+#descriptions li, #navbar li {
+  display: inline;
+  padding: 2px;
+} #descriptions li:last-child {
+  background: rgba(48, 61, 74, 0.1);
+}
+#navbar {
+  position: absolute;
+  margin: 0;
+  bottom: 0;
+  background: #FAF7F2;
+  color: #4A3F30;
+}
+#navbar li {
+  padding: 0;
+}
+#navbar li a {
+  display:block;
+  padding: 2.7vh 25px 2.7vh 25px;
+  font-size: 1.2em;
+  letter-spacing: 1px;
+  border-bottom: 5px solid rgba(0,0,0,0);
+  transition: border-bottom 0.2s, color 0.2s;
+  -webkit-transition: border-bottom 0.2s, color 0.2s; /* Safari */
+  transition-timing-function: ease-in;
+} #navbar li a:hover {
+  color: #309BD1;
+  border-bottom: 5px solid #309BD1;
+} #navbar.stick {
+    margin-top: 0;
+    position: fixed;
+    bottom:auto;
+    top: 0;
+    z-index: 10000;
+} #sticky-anchor {
+  position: absolute;
+  height: 0px;
+  top: auto;
+}
+.alert {
+  padding: 15px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: #FF0D29;
+  font-size: 0.9em;
+  border: 1px solid #FF0D29;
+  border-radius: 3px;
+  background-color: rgba(255, 13, 41, 0.1);
+}
+.flex-container article {
+  align-self: center;
+  flex-basis: 40%;
+} #summary {
+  border-left: 1px solid #4A3F30;
+  padding-left: 10%;
+} #summary h4 {
+  font-weight: normal;
+}
+
+footer {
+  padding: 40px;
+  font-size: 0.9em;
+  background-image: url('/images/dense-pinstripe-texture.png');
+  background-color: #3D3027;
+  color: rgba(240, 240, 240, 0.75);
+  border-top: 1px solid #170B03;
+  text-align: center;
 }
