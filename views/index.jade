@@ -1,5 +1,45 @@
 extends layout
 
 block content
-  h1 Team NGNL
-  p Current Members: Michael Qu, Arthur Silverstein, George Lee, Gary Ge
+  .screen
+    #name
+      h1 Team NGNL
+      p#cinfo.
+        Friends who code
+    .center.content
+      ul#descriptions.flex-container
+        li Arthur Silverstein
+        li Michael Qu
+        li Gary Ge
+    #sticky-anchor
+    #navbar.flex-container
+      li
+        a(href='#') About
+      li
+        a(href='#') Projects
+      li
+        a(href='#') Contact
+      li
+        a(href='#') Plans
+  .pxdivider
+  .pxdivider
+  .pxdivider
+  .flex-container
+    article
+      p.
+        We are a group of passionate programmers pursuing computer science degrees at UC Berkeley and Santa Barbara.
+      br
+      p.
+        Between hackathons, other competitions, and personal projects, we are constantly working to write cool software.
+    #summary
+      ul
+        li
+          h4 Full-stack web development with the MEAN stack (+React and Vue)
+        li
+          h4 Object-oriented programming with Java and C++
+        li
+          h4 App development for both iPhone and Android
+  .pxdivider
+  .pxdivider
+  footer
+    p.center Copyright 2017
